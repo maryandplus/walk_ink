@@ -1,0 +1,105 @@
+body{
+	margin:0;
+  background-color: #231123;
+}
+
+#map, #maptwo, #mapthree{
+	height:100vh;
+	width: 80vw;
+	position:absolute;
+	right:0;
+  cursor: pointer;
+}
+
+
+html {
+  height: 100%;
+  background: #e3e3e0;
+}
+a {
+  text-decoration: none;
+}
+:focus, :active {
+  outline: 0;
+}
+
+
+#accordion, #Accordion1{
+
+	height:100vh;
+	width:20vw;
+	position: absolute;
+	left:0;
+	overflow: scroll;
+    
+}
+
+#accordionactive{
+
+active:true;
+
+}
+
+#accordion .ui-accordion-header {
+  background-color: #231123;
+  margin: 0px;
+  color: #a1d2ce;
+  line-height: 35px;
+  display: block;
+  font-size: 12pt;
+  width: 100%;
+  text-indent: 10px;
+  font-family: cambria;
+}
+
+.ui-accordion-header-active {
+    background: #82204a !important;
+    border: 1px black;
+    color: #78cad2 !important;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background-color: #558c8c;
+    color: #ffffff;
+    font-family: cambria;
+    font-size: 14px;
+}
+
+
+
+.btn-group .button {
+    background-color: #558c8c; 
+    border: 1px #558c8c;
+    color: #f2ddc9;
+    padding: 15px .4px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    width:100%;
+    display: block;
+font-family: cambria;
+
+}
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+    background-color: #78cad2;
+    width: 100%;
+}
+
+a.active_page {
+    color:#82204a;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #000000;
+  
+}

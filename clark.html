@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walk Ink</title>
+    <link rel="shortcut icon" href="favicon1.ico" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+   
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <style type="text/css">
+      html, body, #map {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <!doctype html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Collapse content</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+  
+
+  <link rel="stylesheet" href="style3.css">
+ <link rel="stylesheet" href="scrren.css">
+
+<script>
+  $( function() {
+    $( ".widget button" )
+      .eq( 0 ).button()
+      .end().eq( 1 ).button( {
+        icon: "ui-icon-gear",
+        showLabel: false
+      } ).end().eq( 2 ).button( {
+        icon: "ui-icon-gear"
+      } ).end().eq( 3 ).button( {
+        icon: "ui-icon-gear",
+        iconPosition: "end"
+      } ).end().eq( 4 ).button( {
+        icon: "ui-icon-gear",
+        iconPosition: "top"
+      } ).end().eq( 5 ).button( {
+        icon: "ui-icon-gear",
+        iconPosition: "bottom"
+      } );
+  } );
+  </script>
+
+
+
+
+  </head>
+  <body>
+
+
+<div id="accordion">
+  <h3>Διαδρομές σε γειτονιές</h3>
+  <div class="btn-group">
+  <p> Σε αυτή την κατηγορία συμπεριλαμβάνονται διαδρομές μέσα από τις οποίες μπορεί κάποιος να γνωρίσει τις <a class="active_page" href="clark.html?panel=0#accordion">γειτονιές της Αθήνας</a>. Τέτοιες μπορεί να είναι μια βόλτα στα Εξάρχεια, μια γνωριμία με την περιοχή του Ταύρου κτλ.<p>
+
+    <ul style="list-style: none;padding: 0;margin: 0;"> 
+  <li><button class="button" id="ena">Ρουφ- Ταύρος (27λ.)</button></li>
+  <li><button class="button" id="dyo">Πλατεία Ομόνοιας (7λ.)</button></li>
+  <li><button class="button" id="tria">Ομόνοια-Σύνταγμα-Μοναστράκι (35λ.)</button></li>
+  <li><button class="button" id="tessera">Μεταξουργείο-Γκάζι-Κεραμεικός (12λ.)</button></li>
+  <li><button class="button" id="pente">Κουκάκι-Θησείο-Πετράλωνα (38λ.)</button></li>
+   <li><button class="button" id="eksi">Κολωνάκι (22λ.)</button></li>
+    <li><button class="button" id="epta">Εξάρχεια (12λ.)</button></li>
+    </ul>
+</div>
+<h3>Διαδρομές σε κεντρικές οδούς</h3>
+  <div>
+  <p>Σε αυτή την κατηγορία συμπεριλαμβάνονται διαδρομές κατά τις οποίες μπορεί κάποιος να γνωρίσει την ιστορία της πόλης μέσα από <a class="active_page" href="clark2.html?panel=1#accordion">τις κεντρικές της οδούς</a>. Τέτοιες μπορεί να είναι μια περιπλάνηση στην οδό Αθηνάς, μια σύντομη βόλτα επί της Φωκίωνος Νέγρη κτλ.<p>
+</div>
+<h3>Θεματικές διαδρομές</h3>
+
+ <div>
+
+ <p>Σε αυτή την κατηγορία εντάσσονται οι αμιγώς <a class="active_page" href="clark3.html?panel=2#accordion">θεματικές διαδρομές</a>. Αυτές μπορεί να τις ακολουθήσει κάποιος εφόσον τον ενδιαφέρουν οι προτεινόμενες θεματολογίες. Θεματολογίες όπως γνωριμία με τα δισκάδικα της Αθήνας, εξέταση της αρχιτεκτονικής του Τσίλερ κτλ.<p>
+
+ </div>  
+
+</div>
+
+    <div class='custom-popup' id='map'></div>
+ 
+
+
+
+
+  <button class="ui-button ui-widget ui-corner-all" id="koumpi">
+    <img src="ico_y.png" title="Υπόμνημα"> <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span>
+    <div id="myDIV">
+<img src="titloi_aspro_verfour.png">
+</div>
+  </button>
+
+
+
+
+  <script src="code.js"></script>
+
+<script src="L.TileLayer.BetterWMS.js"></script>
+<script type="text/javascript"> $(function() { $( "#accordion" ).accordion(); }); 
+
+function getParam(name) { var query = location.search.substring(1); if (query.length) { var parts = query.split('&'); for (var i = 0; i < parts.length; i++) { var pos = parts[i].indexOf('='); if (parts[i].substring(0,pos) == name) { return parts[i].substring(pos+1); } } } return 0; }
+
+$(function() { var defaultPanel = parseInt(getParam('panel')); $( "#accordion" ).accordion( {collapsible: true,active: defaultPanel} ); });
+
+
+
+
+</script>
+   
+
+  </body>
+</html>
